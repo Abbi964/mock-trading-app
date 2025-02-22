@@ -1,0 +1,14 @@
+/node_module
+/build
+./node_module
+./build
+/dist
+.npmrc
+.history
+.env
+.vscode
+*.sql
+*.sql.gz
+node_modules
+build
+.DS_Store

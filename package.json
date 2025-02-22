@@ -1,0 +1,22 @@
+{
+  "name": "mock-trading-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "cd backend && npm i && cd ../frontend && npm i",
+    "backend": "cd backend && npm run dev ",
+    "frontend":"cd frontend && npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abbi964/mock-trading-app.git"
+  },
+  "author": "Abhinav Thapliyal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abbi964/mock-trading-app/issues"
+  },
+  "homepage": "https://github.com/Abbi964/mock-trading-app#readme"
+}

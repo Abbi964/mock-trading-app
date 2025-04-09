@@ -1,9 +1,9 @@
 import { Column, Entity, OneToMany } from "typeorm";
-import { BaseEntity } from "./BaseEntity";
+import { BaseEntity, BaseGeneratedEntity } from "./BaseEntity";
 import { Holding } from "./Holding";
 
 @Entity()
-export class User extends BaseEntity {
+export class User extends BaseGeneratedEntity {
     @Column({type:"varchar",nullable:false})
     name: string;
 

@@ -1,6 +1,6 @@
 import { Column, Entity, ManyToOne } from "typeorm";
 import { Stock } from "./Stock";
-import { BaseEntity } from "./BaseEntity";
+import { BaseEntity, BaseGeneratedEntity } from "./BaseEntity";
 
 enum CurrencyEnum {
     USD = 'USD',
@@ -8,7 +8,7 @@ enum CurrencyEnum {
 }
 
 @Entity()
-export class Stock_data extends BaseEntity {
+export class Stock_data extends BaseGeneratedEntity {
 
     @Column({type:'varchar',nullable:false})
     name: string

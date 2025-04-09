@@ -3,3 +3,7 @@ export const LoggerConstant = {
     ERROR_LOG_FILE:'error.log', 
     COMBINE_LOG_FILE:'combine.log'
 }
+
+export const UpstoxConstants = {
+    BASE_URL: 'https://api.upstox.com/v2'
+}

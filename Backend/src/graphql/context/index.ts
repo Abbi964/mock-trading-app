@@ -7,11 +7,11 @@ type UserInfo =  {
 }
 
 export const context = async ({ req }: { req: Request }): Promise<unknown> => {
-    const token = req.headers["authorization"];;
-    const {email,userId}:UserInfo = decodeToken(token)
+    const token = req.headers["authorization"] || '';
+    // const {email,userId}:UserInfo = decodeToken(token)
     const context = {
-        email,
-        userId
+        email: "sample@sample.com",
+        userId: "1"
     };
     return context;
 };

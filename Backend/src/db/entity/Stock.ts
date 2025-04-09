@@ -1,11 +1,11 @@
 import { Column, Entity, OneToMany, ManyToMany, JoinTable } from "typeorm";
 import { Stock_data } from "./Stock_data";
-import { BaseEntity } from "./BaseEntity";
+import { BaseEntity, BaseGeneratedEntity } from "./BaseEntity";
 import { Holding } from "./Holding";
 import { stocks_x_holdings } from "./Stock_x_Holding";
 
 @Entity()
-export class Stock extends BaseEntity {
+export class Stock extends BaseGeneratedEntity {
     @Column({type:"varchar",nullable:false})
     name: string
 

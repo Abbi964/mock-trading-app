@@ -1,11 +1,11 @@
 import { Column, Entity, JoinTable, ManyToMany, ManyToOne, OneToMany } from "typeorm";
-import { BaseEntity } from "./BaseEntity";
+import { BaseEntity, BaseGeneratedEntity } from "./BaseEntity";
 import { User } from "./User";
 import { Stock } from "./Stock";
 import { stocks_x_holdings } from "./Stock_x_Holding";
 
 @Entity()
-export class Holding extends BaseEntity {
+export class Holding extends BaseGeneratedEntity {
 
     @Column({type:"boolean",nullable:false})
     isMain: boolean
